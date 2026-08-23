@@ -10,6 +10,8 @@ mkdir -p ${HOME}/.ssh
 chmod 700 ${HOME}/.ssh
 ssh-keygen -t ed25519 -N '' -a 100 -f ${HOME}/.ssh/id_ed25519
 
+cd ${HOME}
+
 echo "Switching to NKP bundle directory and loading NKP images..."
 NKP_DIR=$(ls --color=never | grep nkp-v | head -1)
 if [ -z "$NKP_DIR" ]; then
@@ -18,10 +20,9 @@ if [ -z "$NKP_DIR" ]; then
 fi
 echo "Found NKP directory: $NKP_DIR"
 cd "$NKP_DIR" 
-#
 
 echo "Sourcing environment variables..."
-source ../env.vars
+source ../nkp-manual-install/env.vars
 
 echo "Loading NKP images..."
 # docker load -i nkp-image-builder-image-${NKP_VERSION}.tar # Optional, only needed if you want to create a customized images.
@@ -35,7 +36,7 @@ cd ${HOME}/${CLUSTER_NAME}
 NKP_BUNDLE_PATH="../${NKP_DIR}/container-images/*.tar"
 
 # Create self-signed cert
-IP_ADDRESS='10.42.93.241' # modify for first IP in MetalLbRange
+IP_ADDRESS='x.x.x.x' # modify for first IP in MetalLbRange
 
 # To organize all the files, create a folder for this. The proceeding steps assume this folder is in your home directory
 mkdir nkp-cert
