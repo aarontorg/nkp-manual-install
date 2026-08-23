@@ -109,9 +109,9 @@ nkp create cluster nutanix \
   --worker-replicas=3 \
   --worker-vcpus=16 \
   --worker-memory=24 \
-  --ingress-ca=nkp-cert/ca.crt \
-  --ingress-certificate=nkp-cert/fullchain.pem \
-  --ingress-private-key=nkp-cert/tls.key \
+  --ingress-ca=./nkp-cert/ca.crt \
+  --ingress-certificate=./nkp-cert/fullchain.pem \
+  --ingress-private-key=./nkp-cert/tls.key \
   --cluster-hostname=${IP_ADDRESS}
 
 # --insecure is for Prism Central to not check the CA cert
