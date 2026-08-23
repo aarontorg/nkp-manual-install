@@ -36,7 +36,7 @@ cd ${HOME}/${CLUSTER_NAME}
 NKP_BUNDLE_PATH="../${NKP_DIR}/container-images/*.tar"
 
 # Create self-signed cert
-IP_ADDRESS='x.x.x.x' # modify for first IP in MetalLbRange
+#IP_ADDRESS='x.x.x.x' # modify for first IP in MetalLbRange
 
 # To organize all the files, create a folder for this. The proceeding steps assume this folder is in your home directory
 mkdir nkp-cert
