@@ -1,0 +1,5 @@
+gpu:
+  nvidia:
+    driver:
+      enabled: true
+      version: "535.154.05"

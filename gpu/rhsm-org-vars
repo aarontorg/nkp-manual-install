@@ -1,0 +1,2 @@
+export RHSM_ORG_ID="12345678"
+export RHSM_ACTIVATION_KEY="marketing-rhel-key"
