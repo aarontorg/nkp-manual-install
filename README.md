@@ -1,4 +1,6 @@
-Mainly to collect files used during manual install of NKP
+High-level steps to install NKP for a POC
+
+Clone this repo
 
 1. Create new Ubuntu OS image in Prism Central: https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
 2. Add nkp-base image to prism central
@@ -9,7 +11,7 @@ Mainly to collect files used during manual install of NKP
     - Click the dots on the right and select Copy download link
     - Go to prism central and create the image from the copied ULR (it is time limited so you may have to get a new link if it expires)
 3. Create Jumpbox VM, use the Ubuntu image created in step 1
-4. Follow Jumpbox setup instructions
+4. Follow the provided Jumpbox setup instructions
     - Bundle url: https://portal.nutanix.com/page/downloads?product=nkp
 5. Modify variables in env.vars file
 6. Run nkp-mgmt-install.sh script
