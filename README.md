@@ -1,6 +1,6 @@
 High-level steps to install NKP for a POC
 
-Clone this repo
+Clone this repo: https://github.com/aarontorg/nkp-manual-install.git
 
 1. Create new Ubuntu OS image in Prism Central: https://cloud-images.ubuntu.com/noble/current/noble-server-cloudimg-amd64.img
 2. Add nkp-base image to prism central

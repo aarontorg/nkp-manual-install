@@ -2,4 +2,5 @@ gpu:
   nvidia:
     driver:
       enabled: true
-      version: "535.154.05"
+      usePrecompiled: true
+      version: 580 #"535.154.05"
