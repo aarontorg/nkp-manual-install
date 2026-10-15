@@ -14,4 +14,11 @@ Clone this repo: https://github.com/aarontorg/nkp-manual-install.git
 4. Follow the provided Jumpbox setup instructions: https://gist.github.com/ryandotclair/644796f3fbfda8f602c4ab89b7bae39a  
     - Bundle url: https://portal.nutanix.com/page/downloads?product=nkp
 5. Modify variables in env.vars file
+6. Verify proxy and cert issues
+    - If proxy you will have to add the following arguments to the command in the script with their values hard coded or also adding corresponding vars in the env.vars file
+        --http-proxy string                               
+        --https-proxy string
+        --no-proxy comma-separated-string
+    - If cert issues prevent from downloading items from github and other places switch to airgapped mode
+        --airgapped=true
 6. Run nkp-mgmt-install.sh script
