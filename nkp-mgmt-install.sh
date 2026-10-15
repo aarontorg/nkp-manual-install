@@ -5,11 +5,6 @@ set -euo pipefail
 echo "Running with shell: $SHELL"
 echo "Script location: $0"
 
-echo "Generating SSH key..."
-mkdir -p ${HOME}/.ssh
-chmod 700 ${HOME}/.ssh
-ssh-keygen -t ed25519 -N '' -a 100 -f ${HOME}/.ssh/id_ed25519
-
 cd ${HOME}
 
 echo "Switching to NKP bundle directory and loading NKP images..."
