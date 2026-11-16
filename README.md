@@ -6,7 +6,7 @@ Clone this repo: https://github.com/aarontorg/nkp-manual-install.git
 2. Add nkp-base image to prism central
     - Got to: https://portal.nutanix.com/page/downloads?product=nkp
     - Select "NKP Operating Sytems Images" in the top drop down
-    - Filter by the desired NKP version (2.17.1)
+    - Filter by the desired NKP version (2.19.1)
     - Look for "NKP Node OS Image (Ubuntu Linux 24.04 - CIS Hardened) for AHV
     - Click the dots on the right and select Copy download link
     - Go to prism central and create the image from the copied ULR (it is time limited so you may have to get a new link if it expires)
