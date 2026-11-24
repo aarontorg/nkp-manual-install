@@ -114,7 +114,7 @@ echo "Setting kubeconfig as default (safely)..."
 mkdir -p ${HOME}/.kube
 mkdir -p ${HOME}/${CLUSTER_NAME}
 cat ${CLUSTER_NAME}.conf >> ${HOME}/.kube/config
-kubectx ${CLUSTER_NAME} # Switch to the new cluster
+kubectx "${CLUSTER_NAME}@nkp" # Switch to the new cluster
 
 # Validate Kommander is installed properly (for cloud-init logs).
 kubectl -n kommander wait --for condition=Ready helmreleases --all --timeout 15m
